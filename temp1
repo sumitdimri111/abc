@@ -1,0 +1,16 @@
+r=[]
+valid=True
+while (True):
+    val=input()
+    if val=="q":
+        break
+    val=float(val)
+    if val < 0:
+        valid=False
+        break
+    r.append(val)
+r.sort(reverse=True)
+if valid:
+    print(r)
+else:
+    print ("Invalid input")
